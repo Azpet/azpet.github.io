@@ -1,24 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+html,
 body {
-  font-family: sans-serif;
-  margin: auto;
-  max-width: 1280px;
-}
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #000;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.header {
+  background-image: url(../../assets/imgs/oeroflux.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%; }
 
 .navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
-}
+  height: 95px; }
 
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-  text-decoration: none;
-}
+.navbar-default {
+  background-color: transparent;
+  border: none; }
+  .navbar-default .navbar-brand img {
+    margin-top: 15px;
+    width: 225px; }
+  .navbar-default .navbar-nav li {
+    margin-top: 45px;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .navbar-default .navbar-nav li a {
+      font-size: 18px;
+      color: #140C46;
+      text-transform: uppercase;
+      font-weight: 600; }
 
-.navbar a:hover {
-  color: #ffffff;
-}
+.main .main-intro {
+  margin-top: 300px;
+  color: #140C46;
+  font-weight: 500;
+  font-size: 47px; }
+.main .quick-intro {
+  color: #929292;
+  line-height: 2;
+  font-weight: 500; }
+.main .button {
+  margin-top: 45px; }
+  .main .button a {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #140C46, #EB4D27);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+    .main .button a:hover {
+      background: linear-gradient(to right, #EB4D27, #140C46); }
 
+.about {
+  border-top: 2px solid #f4f4f4;
+  padding: 35px;
+  background-color: #f4f4f4; }
+  .about .title {
+    margin-top: 75px;
+    font-size: 35px; }
+    .about .title span.tilt {
+      padding: 10px 20px;
+      background-color: #140C46;
+      color: #fff; }
+  .about .description {
+    margin-top: 65px;
+    color: #929292;
+    line-height: 2; }
+  .about img {
+    margin-top: 45px; }
+
+.projects {
+  padding: 35px; }
+  .projects .title {
+    margin-top: 75px;
+    font-size: 35px; }
+    .projects .title span.tilt {
+      padding: 10px 20px;
+      background-color: #140C46;
+      color: #fff; }
+
+.center {
+  margin-top: 45px;
+  text-align: center; }
+
+.project .button {
+  margin-top: 20px; }
+  .project .button a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #140C46, #EB4D27);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+    .project .button a:hover {
+      background: linear-gradient(to right, #EB4D27, #140C46); }
+
+.question {
+  padding: 65px;
+  margin-top: 45px;
+  background-color: #f4f4f4;
+  text-align: center; }
+  .question .col-md-12 p {
+    font-size: 28px; }
+  .question .col-md-12 .button {
+    margin-top: 22px; }
+    .question .col-md-12 .button a {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #140C46, #EB4D27);
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out; }
+      .question .col-md-12 .button a:hover {
+        background: linear-gradient(to right, #EB4D27, #140C46); }
+
+@media only screen and (max-width: 986px), only screen and (max-device-width: 986px) {
+  .main .quick-intro {
+    margin: 0 auto;
+    width: 450px;
+    position: relative;
+    left: -115px; } }
+
+/*# sourceMappingURL=styles.css.map */
