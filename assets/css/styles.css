@@ -7,8 +7,7 @@ body {
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   color: #000;
-  overflow-x: hidden;
-  overflow-y: hidden; }
+  overflow-x: hidden; }
 
 .header {
   background-image: url(../../assets/imgs/oeroflux.png);
@@ -67,7 +66,8 @@ body {
   background-color: #f4f4f4; }
   .about .title {
     margin-top: 75px;
-    font-size: 35px; }
+    font-size: 35px;
+    color: #140C46; }
     .about .title span.tilt {
       padding: 10px 20px;
       background-color: #140C46;
@@ -83,7 +83,8 @@ body {
   padding: 35px; }
   .projects .title {
     margin-top: 75px;
-    font-size: 35px; }
+    font-size: 35px;
+    color: #140C46; }
     .projects .title span.tilt {
       padding: 10px 20px;
       background-color: #140C46;
@@ -110,7 +111,6 @@ body {
 
 .question {
   padding: 65px;
-  margin-top: 45px;
   background-color: #f4f4f4;
   text-align: center; }
   .question .col-md-12 p {
@@ -136,5 +136,58 @@ body {
     width: 450px;
     position: relative;
     left: -115px; } }
+.bg-g {
+  background: #f4f4f4; }
+
+.footer {
+  padding: 35px;
+  background-color: #1D1D1D; }
+  .footer p {
+    color: #fff; }
+  .footer a {
+    color: #ddd;
+    text-decoration: none; }
+    .footer a:hover {
+      color: #fff; }
+
+.project-details .project-image {
+  margin-bottom: 35px; }
+.project-details .dev span {
+  font-weight: bold; }
+.project-details .detail span {
+  font-weight: bold; }
+
+.button button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #140C46, #EB4D27);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; }
+  .button button:hover {
+    background: linear-gradient(to right, #EB4D27, #140C46); }
+
+.bold {
+  font-weight: bold; }
+
+.partners {
+  padding: 35px; }
+  .partners .title {
+    margin-top: 75px;
+    font-size: 35px;
+    color: #140C46; }
+    .partners .title span.tilt {
+      padding: 10px 20px;
+      background-color: #140C46;
+      color: #fff; }
+  .partners .partner {
+    margin-top: 35px; }
+    .partners .partner img {
+      width: 125px;
+      vertical-align: middle; }
 
 /*# sourceMappingURL=styles.css.map */
