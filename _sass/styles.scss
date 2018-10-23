@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
-
 $blue: #140C46;
 $orange: #EB4D27;
 
@@ -14,8 +12,8 @@ body {
     overflow-x: hidden;
 }
 
-.header {
-    background-image: url(../../assets/imgs/oeroflux.png);
+header {
+    background-image: url(../../assets/images/ceroflux.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -187,7 +185,7 @@ body {
     background: #f4f4f4;
 }
 
-.footer {
+footer {
     padding: 35px;
     background-color: #1D1D1D;
     p {
