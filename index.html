@@ -1,61 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+---
+layout: default
+id: home
+---
 
-    <title>CeroFlux &bull; Game Studio</title>
-    <meta name="description" content="description">
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:300,400,500,700,900" rel="stylesheet">
-    
-    <link rel="icon" href="/assets/imgs/favicon.ico" type="image/x-icon">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-</head>
-<div class="header">
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><img src="assets/imgs/logo.png"></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a class="active" href="#about">About</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#apps">Applications</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="container">
-            <div class="col-md-7">
-                <p class="main-intro">Spark your imagination</p>
-                <p class="quick-intro">Almost everything is possible in games and software and it's our goal to try and reach new limits! Whether it's for entertainment or more serious purposes, we are always ready for the next challenge.</p>
-                <div class="button">
-                    <a href="#">Services</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="about" id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img width="350" height="250" src="assets/imgs/Timebenders.png">
+                <img width="350" height="250" src="{{site.baseurl}}/assets/images/Timebenders.png">
             </div>
             <div class="col-md-7">
                 <p class="title"><span class="tilt">Who</span> are we?</p>
@@ -77,7 +29,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-4">
                 <div class="project">
-                    <img width="300" height="200" src="assets/imgs/Timebenders.png">
+                    <img width="300" height="200" src="{{site.baseurl}}/assets/images/Timebenders.png">
                     <div class="button">
                         <a data-toggle="modal" data-target="#game1" href="">Learn More</a>
                     </div>
@@ -85,7 +37,7 @@
             </div>
             <div class="col-md-4">
                 <div class="project">
-                    <img width="300" height="200" src="assets/imgs/FingeringMoma.png">
+                    <img width="300" height="200" src="{{site.baseurl}}/assets/images/FingeringMoma.png">
                     <div class="button">
                         <a data-toggle="modal" data-target="#game2" href="">Learn More</a>
                     </div>
@@ -106,7 +58,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <div class="project">
-                    <img width="300" height="200" src="assets/imgs/Jazzhands.png">
+                    <img width="300" height="200" src="{{site.baseurl}}/assets/images/Jazzhands.png">
                     <div class="button">
                         <a data-toggle="modal" data-target="#app1" href="">Learn More</a>
                     </div>
@@ -126,27 +78,27 @@
         <div class="row">
             <div class="col-md-2">
                 <div class="partner">
-                    <img class="img-responsive" src="assets/imgs/lemonshell.png">
+                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/lemonshell.png">
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="partner">
-                    <img class="img-responsive" src="assets/imgs/shellpad-logo.png">
+                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/shellpad-logo.png">
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="partner">
-                    <img class="img-responsive" src="assets/imgs/oogbaard.png">
+                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/oogbaard.png">
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="partner">
-                    <img class="img-responsive" src="assets/imgs/pillar.png">
+                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/pillar.png">
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="partner">
-                    <img class="img-responsive" src="assets/imgs/firebrush.png">
+                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/firebrush.png">
                 </div>
             </div>
         </div>
@@ -176,7 +128,7 @@
             <div class="modal-body">
                 <div class="project-details">
                     <div class="project-image">
-                        <img class="img-responsive" src="assets/imgs/Timebenders.png">
+                        <img class="img-responsive" src="{{site.baseurl}}/assets/images/Timebenders.png">
                     </div>
                     <p class="dev"><span>Developer:</span> Oogbaard</p>
                     <p class="detail"><span>Release Date:</span> TBA</p>
@@ -201,7 +153,7 @@
             <div class="modal-body">
                 <div class="project-details">
                     <div class="project-image">
-                        <img class="img-responsive" src="assets/imgs/FingeringMoma.png">
+                        <img class="img-responsive" src="{{site.baseurl}}/assets/images/FingeringMoma.png">
                     </div>
                     <p class="dev"><span>Developer:</span> CeroFlux & Shellpad Interactive</p>
                     <p class="detail"><span>Release Date:</span> TBA</p>
@@ -226,7 +178,7 @@
             <div class="modal-body">
                 <div class="project-details">
                     <div class="project-image">
-                        <img class="img-responsive" src="assets/imgs/Jazzhands.png">
+                        <img class="img-responsive" src="{{site.baseurl}}/assets/images/Jazzhands.png">
                     </div>
                     <p class="dev"><span>Developer:</span> CeroFlux & Shellpad Interactive</p>
                     <p class="detail"><span>Release Date:</span> TBA</p>
@@ -275,19 +227,3 @@
         </div>
     </div>
 </div>
-<!-- /Modals -->
-<div class="footer">
-    <div class="container">
-        <div class="pull-left">
-            <p>&copy; CeroFlux 2018. All Rights Reserved.</p>
-        </div>
-        <div class="pull-right">
-            <p><a href="#">Terms of Service </a> - <a href="#"> Privacy Policy</a></p>
-        </div>
-    </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="assets/js/smooth-scroll.js"></script>
-</body>
-</html>
