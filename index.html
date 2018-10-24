@@ -28,14 +28,17 @@ id: home
         <div class="row center">
             {% for post in site.posts %}
             {% if post.category == "game"%}
-            <div class="col-md-4">
-                <div class="project">
-                    <img width="300" height="200" src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
-                    <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
-                        <div class="button">Learn More</div>
-                    </a>
-                </div>
-            </div>
+            <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
+                    <div class="col-sm-4 project">
+                        <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
+                        <div class="overlay-box">
+                            <div class="content">
+                                <p>{{post.excerpt}}</p>
+                                <h3>Click to learn more</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             {% endif %}
             {% endfor %}
         </div>
@@ -52,14 +55,17 @@ id: home
         <div class="row center">
             {% for post in site.posts %}
             {% if post.category == "software"%}
-            <div class="col-md-4">
-                <div class="project">
-                    <img width="300" height="200" src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
-                    <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
-                        <div class="button">Learn More</div>
-                    </a>
+            <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
+                <div class="col-sm-4 project">
+                    <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
+                    <div class="overlay-box">
+                        <div class="content">
+                            <p>{{post.excerpt}}</p>
+                            <h3>Click to learn more</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </a>
             {% endif %}
             {% endfor %}
     </div>
@@ -72,35 +78,26 @@ id: home
                 <p class="title"><span class="tilt">Our</span> partners</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-2">
-                <div class="partner">
-                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/lemonshell.png">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="partner">
-                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/shellpad-logo.png">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="partner">
-                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/oogbaard.png">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="partner">
-                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/pillar.png">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="partner">
-                    <img class="img-responsive" src="{{site.baseurl}}/assets/images/firebrush.png">
-                </div>
-            </div>
+        <div class="row center">
+                {% for post in site.posts %}
+                {% if post.category == "partner"%}
+                <a href="{{post.site}}">
+                    <div class="col-lg-4 col-sm-6 partner">
+                        <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}">
+                        <div class="overlay-box">
+                            <div class="content">
+                                <h3>{{post.header}}</h3>
+                                <h2>{{post.name}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+                {% endfor %}
         </div>
     </div>
 </div>
+
 <div class="question">
     <div class="container">
         <div class="row">
@@ -137,36 +134,3 @@ id: home
     </div>
 {% endif %}
 {% endfor %}
-
-<!-- Contact Modal -->
-<div id="contact" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Get in Contact</h4>
-            </div>
-            <div class="modal-body">
-                <div class="contact-form">
-                    <form action="https://script.google.com/macros/s/AKfycbx51XjInxdHJGY8eKDecsmHfWXIaq12bO2-cDceN40UCmX8GHs/exec" method="post">
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" type="text" placeholder="Your Query" rows="5" required></textarea>
-                        </div>
-                        <div class="button">
-                            <button>Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

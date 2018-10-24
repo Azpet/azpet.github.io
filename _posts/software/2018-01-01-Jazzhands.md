@@ -9,6 +9,7 @@ images:
     title: Jazzhands
 ---
 
+An application for jazzing your hands.
 <!--content-->
 
 <p class="dev"><span>Developer:</span> CeroFlux & Shellpad Interactive</p>

@@ -9,6 +9,7 @@ images:
     title: Fingering Moma
 ---
 
+A funny mobile game where you use your finger to flick balls across the screen.
 <!--content-->
 
 <p class="dev"><span>Developer:</span> CeroFlux & Shellpad Interactive</p>

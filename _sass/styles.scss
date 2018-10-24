@@ -106,7 +106,6 @@ header {
 
 .projects {
     padding: 35px;
-//    border-top: 1px solid #ddd;
     .title {
         margin-top: 75px;
         font-size: 35px;
@@ -124,6 +123,8 @@ header {
     text-align: center;
 }
 .project {
+    padding: 0;
+    margin: 10px;
     a{
         text-decoration: none;
     }
@@ -140,6 +141,10 @@ header {
         &:hover {
             background: linear-gradient( to right, $orange, $blue);
         }
+    }
+    img {
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -250,10 +255,62 @@ footer {
         }
     }
     .partner {
-        margin-top: 35px;
+        position: relative;
+        display: block;
+        max-width: 650px;
+        max-height: 350px;
+        margin: 0 auto;
         img {
-            width: 125px;
+            max-height: 100%;
+            max-width: 100%;
             vertical-align: middle;
         }
     }
+}
+
+.overlay-box {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: #ff7933;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+
+    .content {
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+
+        p {
+            font-size: 15px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: normal;
+            text-align: center;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 15px;
+            color: #ccc;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+.overlay-box:hover {
+    opacity: 100;
 }

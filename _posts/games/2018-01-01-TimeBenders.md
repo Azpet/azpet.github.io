@@ -9,6 +9,7 @@ images:
     title: Timebenders
 ---
 
+An online PvP time bending game, rewind time until the rewinding never happened!
 <!--content-->
 
 <p class="dev"><span>Developer:</span> Oogbaard</p>
