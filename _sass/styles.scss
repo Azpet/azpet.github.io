@@ -123,21 +123,21 @@ header {
     text-align: center;
 }
 .project {
+    a{
+        text-decoration: none;
+    }
     .button {
-        margin-top: 20px;
-        a {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: linear-gradient(to right, $blue, $orange);
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: opacity .25s ease-in-out;
-           -moz-transition: opacity .25s ease-in-out;
-           -webkit-transition: opacity .25s ease-in-out;
-            &:hover {
-                background: linear-gradient( to right, $orange, $blue);
-            }
+        padding: 10px 0;
+        width: 150px;
+        background: linear-gradient(to right, $blue, $orange);
+        margin: 15px auto 15px auto;
+        color: #fff;
+        text-transform: uppercase;
+        transition: opacity .25s ease-in-out;
+       -moz-transition: opacity .25s ease-in-out;
+       -webkit-transition: opacity .25s ease-in-out;
+        &:hover {
+            background: linear-gradient( to right, $orange, $blue);
         }
     }
 }
@@ -173,10 +173,7 @@ header {
 @media only screen and (max-width: 986px), only screen and (max-device-width: 986px) {
     .main {
         .quick-intro {
-            margin: 0 auto;
-            width: 450px;
-            position: relative;
-            left: -115px;
+            max-width: 450px;
         }
     }
 }
