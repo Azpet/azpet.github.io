@@ -13,11 +13,14 @@ body {
 }
 
 header {
-    background-image: url(../../assets/images/ceroflux.png);
+    position: relative;
+    // background-image: url(../../assets/images/ceroflux.png);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 100%;
+    height: 100%;
+    min-height: 900px;
 }
 .navbar {
     height: 95px;
@@ -92,6 +95,7 @@ header {
     border-top: 2px solid #f4f4f4;
     padding: 35px;
     background-color: #f4f4f4;
+    position: relative;
     .title {
         margin-top: 8px;
         font-size: 35px;
@@ -334,4 +338,40 @@ footer {
 
 .overlay-box:hover {
     opacity: 100;
+}
+
+.header-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.particle {
+    position: absolute;
+    animation-name: fluxparticle;
+    animation-duration: 10s;
+    box-shadow: 20px 20px grey;
+}
+
+@keyframes fluxparticle
+{
+    0%{
+        background-color: #150c44;
+        width: 250px;
+        height: 250px;
+        top: 100%;
+    }
+    40% {
+        background: #e04a25;
+        opacity: 1;
+    }
+    60% {
+        background: #ea7e30;
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        top: 0;
+        opacity: 0;
+    }
 }
