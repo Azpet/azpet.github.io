@@ -1,4 +1,8 @@
 $(function () {
+    // Do not use particles if user is on mobile
+    if(isMobile)
+        return;
+
     // Change css
     $("header").css("background-image", "none");
     $("header").css("background-color", "white");
