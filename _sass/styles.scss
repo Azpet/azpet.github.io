@@ -5,7 +5,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    min-width: 500px;
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
@@ -46,6 +45,12 @@ header {
         }
     }
 }
+.navbar-default .navbar-toggle.collapsed {
+    background-color: transparent;
+}
+.navbar-collapse {
+    border: none;
+}
 
 .main {
     .main-intro {
@@ -56,26 +61,27 @@ header {
     }
     .quick-intro {
         color: #929292;
+        margin: 30px 0;
         line-height: 2;
         font-weight: 500;
     }
     .button {
-        margin-top: 45px;
-        a {
-            padding: 15px 30px;
-            background: linear-gradient(to right, $blue, $orange);
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 18px;
-            transition: opacity .25s ease-in-out;
-           -moz-transition: opacity .25s ease-in-out;
-           -webkit-transition: opacity .25s ease-in-out;
-            &:hover {
-                background: linear-gradient( to right, $orange, $blue);
-            }
-        }
+        margin: 30px 0;
+        background: linear-gradient(to right, $blue, $orange);
+        height: 50px;
+        line-height: 50px;
+        width: 150px;
+
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+
+       &:hover {
+        background: linear-gradient( to right, $orange, $blue);
+    }
     }
 }
 
@@ -84,7 +90,7 @@ header {
     padding: 35px;
     background-color: #f4f4f4;
     .title {
-        margin-top: 75px;
+        margin-top: 8px;
         font-size: 35px;
         color: $blue;
         span.tilt {
@@ -95,19 +101,20 @@ header {
         }
     }
     .description {
-        margin-top: 65px;
+        margin-top: 25px;
         color: #929292;
         line-height: 2;
     }
     img {
-        margin-top: 45px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100%;
     }
 }
 
 .projects {
     padding: 35px;
     .title {
-        margin-top: 75px;
         font-size: 35px;
         color: $blue;
         span.tilt {
@@ -244,7 +251,6 @@ footer {
 .partners {
     padding: 35px;
     .title {
-        margin-top: 75px;
         font-size: 35px;
         color: $blue;
         span.tilt {
@@ -277,7 +283,7 @@ footer {
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: #ff7933;
+    background: #ea7e30;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     transition: all .2s;
@@ -289,9 +295,15 @@ footer {
         width: 100%;
         transform: translateY(-50%);
 
-        p {
-            font-size: 15px;
+        .excerpt {
+            font-size: 18px;
             margin: 0;
+        }
+
+        .details {
+            font-size: 22px;
+            font-weight: bold;
+            color: #140C46;
         }
 
         h2 {
@@ -304,6 +316,14 @@ footer {
         h3 {
             font-size: 15px;
             color: #ccc;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 15px;
+            color: #222;
             font-weight: bold;
             text-align: center;
             margin: 0;

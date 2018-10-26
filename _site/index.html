@@ -15,6 +15,7 @@
 			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="/assets/externals/jquery-easing/jquery.easing.min.js"
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 			<!-- link to main stylesheet -->
@@ -40,10 +41,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a class="active" href="#about">About</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#apps">Applications</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="active js-scroll-trigger" href="#about">About</a></li>
+                    <li><a href="#games" class="js-scroll-trigger">Games</a></li>
+                    <li><a href="#apps" class="js-scroll-trigger">Applications</a></li>
+                    <li><a href="#contact" class="js-scroll-trigger">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -54,9 +55,9 @@
             <div class="col-md-7">
                 <p class="main-intro">Spark your imagination</p>
                 <p class="quick-intro">Almost everything is possible in games and software and it's our goal to try and reach new limits! Whether it's for entertainment or more serious purposes, we are always ready for the next challenge.</p>
-                <div class="button">
-                    <a href="#">Services</a>
-                </div>
+                <a href="#games" class="js-scroll-trigger">
+                    <div class="button">Services</div>
+                </a>
             </div>
         </div>
     </div>
@@ -67,7 +68,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img width="350" height="250" src="/assets/images/Timebenders.png">
+                <img src="/assets/images/Timebenders.png">
             </div>
             <div class="col-md-7">
                 <p class="title"><span class="tilt">Who</span> are we?</p>
@@ -101,10 +102,10 @@
                         <img src="/assets/images/Timebenders.png" alt="Game Logo">
                         <div class="overlay-box">
                             <div class="content">
-                                <p><p>An online PvP time bending game, rewind time until the rewinding never happened!</p>
+                                <div class="excerpt"><p>An online PvP time bending game, rewind time until the rewinding never happened!</p>
 
-</p>
-                                <h3>Click to learn more</h3>
+</div>
+                                <div class="details">Click to learn more</div>
                             </div>
                         </div>
                     </div>
@@ -117,10 +118,10 @@
                         <img src="/assets/images/FingeringMoma.png" alt="Game Logo">
                         <div class="overlay-box">
                             <div class="content">
-                                <p><p>A funny mobile game where you use your finger to flick balls across the screen.</p>
+                                <div class="excerpt"><p>A funny mobile game where you use your finger to flick balls across the screen.</p>
 
-</p>
-                                <h3>Click to learn more</h3>
+</div>
+                                <div class="details">Click to learn more</div>
                             </div>
                         </div>
                     </div>
@@ -146,10 +147,10 @@
                     <img src="/assets/images/Jazzhands.png" alt="Game Logo">
                     <div class="overlay-box">
                         <div class="content">
-                            <p><p>An application for jazzing your hands.</p>
+                            <div class="excerpt"><p>An application for jazzing your hands.</p>
 
-</p>
-                            <h3>Click to learn more</h3>
+</div>
+                            <div class="details">Click to learn more</div>
                         </div>
                     </div>
                 </div>
@@ -230,7 +231,7 @@
     </div>
 </div>
 
-<div class="question">
+<div class="question" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
