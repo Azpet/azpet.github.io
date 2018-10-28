@@ -1,0 +1,62 @@
+/*---------- PARTICLES ----------*/
+.header-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.particle {
+    position: absolute;
+    animation-name: fluxparticle;
+    animation-duration: 10s;
+}
+
+.particle-background {
+    position: absolute;
+    animation-name: fluxparticle-background;
+    animation-duration: 10s;
+    z-index: -1;
+}
+
+/*---------- ANIMATION KEYFRAMES ----------*/
+@keyframes fluxparticle
+{
+    0%{
+        background-color: #150c44;
+        width: 250px;
+        height: 250px;
+        top: 100%;
+    }
+    40% {
+        background: #e04a25;
+        opacity: 1;
+    }
+    60% {
+        background: #ea7e30;
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fluxparticle-background
+{
+    0%{
+        background-color: #f4f4f4;
+        width: 250px;
+        height: 250px;
+        top: 100%;
+    }
+    80% {
+        opacity: 1;
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        top: 0;
+        opacity: 0;
+    }
+}
