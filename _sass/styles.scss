@@ -21,6 +21,7 @@ header {
     background-size: cover;
     height: 100%;
     min-height: 900px;
+    z-index: -10;
 }
 .navbar {
     height: 95px;
@@ -350,7 +351,13 @@ footer {
     position: absolute;
     animation-name: fluxparticle;
     animation-duration: 10s;
-    box-shadow: 20px 20px grey;
+}
+
+.particle-background {
+    position: absolute;
+    animation-name: fluxparticle-background;
+    animation-duration: 10s;
+    z-index: -1;
 }
 
 @keyframes fluxparticle
@@ -367,6 +374,25 @@ footer {
     }
     60% {
         background: #ea7e30;
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fluxparticle-background
+{
+    0%{
+        background-color: #f4f4f4;
+        width: 250px;
+        height: 250px;
+        top: 100%;
+    }
+    80% {
+        opacity: 1;
     }
     100%{
         width: 0px;
