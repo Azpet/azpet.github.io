@@ -216,7 +216,7 @@ body {
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: #ea7e30;
+    background: $orange;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     transition: all .2s;
@@ -236,7 +236,7 @@ body {
         .details {
             font-size: 22px;
             font-weight: bold;
-            color: #140C46;
+            color: $blue;
         }
 
         h2 {
