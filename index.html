@@ -7,7 +7,7 @@ id: home
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img src="{{site.baseurl}}/assets/images/Timebenders.png">
+                <img src="{{site.baseurl}}/assets/images/Timebenders.png" alt="about">
             </div>
             <div class="col-md-7">
                 <p class="title"><span class="tilt">Who</span> are we?</p>
@@ -83,7 +83,7 @@ id: home
                 {% if post.category == "partner"%}
                 <a href="{{post.site}}">
                     <div class="col-lg-4 col-sm-6 partner">
-                        <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}">
+                        <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
                         <div class="overlay-box">
                             <div class="content">
                                 <h3>{{post.header}}</h3>
@@ -123,7 +123,7 @@ id: home
                 <div class="modal-body">
                     <div class="project-details">
                         <div class="project-image">
-                            <img class="img-responsive" src="{{site.baseurl}}/assets/images/{{post.images[0].url}}">
+                            <img class="img-responsive" src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
                         </div>
                         {{post.content}}
                     </div>
