@@ -6,8 +6,8 @@ name: Jazzhands
 
 # Featured image
 images:
-  - url: Jazzhands.png
-    alt: Game Logo
+  - url: Jazzhands.jpg
+    alt: Software Logo
     title: Jazzhands
 ---
 

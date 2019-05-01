@@ -11,7 +11,7 @@ images:
     title: Timebenders
 ---
 
-An online 3rd-person battle arena game where you manipulate time to overcome your opponents. Rewind your enemy, rewind yourself. Rewind time until the rewinding never happened. 
+An online 3rd-person battle arena game where you manipulate time to overcome your opponents. Rewind time until the rewinding never happened. 
 <!--content-->
 
 <div class="project-desc">
