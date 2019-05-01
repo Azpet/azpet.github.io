@@ -1,8 +1,8 @@
 ---
 category: partner
-site: http://www.shellpadinteractive.com/
+site: https://www.shellpadinteractive.com/
 header: Game Developer
-name: Geert Beuneker
+name: Shellpad Interactive
 
 # Featured image
 images:

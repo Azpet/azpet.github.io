@@ -13,3 +13,24 @@ footer {
         }
     }
 }
+
+.location {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #333;
+  background-image: url(../../assets/images/map.jpg);
+  background-position: 50% 65%;
+  background-attachment: scroll;
+  background-size: auto;
+  color: #fff;
+}
+
+@media (min-width: 2560px) {
+  .location {
+    background-size: 100%;
+  }
+}
+
+.copyright {
+  background-color: #222;
+}

@@ -6,15 +6,17 @@ id: home
 <div class="about" id="about">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <!--<div class="col-md-5">
                 <img src="{{site.baseurl}}/assets/images/Timebenders.png" alt="about">
-            </div>
+            </div>-->
             <div class="col-md-7">
                 <p class="title"><span class="tilt">Who</span> are we?</p>
-                <p class="description">
-                    We are a small flexible team of developers and artists with a passion to make games and software. Not only the final product is our focus, but we also highly value the way we get there. To accomplish this we work in short development cycles to ensure that the product is always moving in the right direction. At each step of the way we make sure that the right professional is on the job.
-                </p>
             </div>
+        </div>
+        <div class="row">
+            <p class="description">
+                We are a small flexible team of developers and artists with a passion to make games and software. Not only the final product is our focus, but we also highly value the way we get there. To accomplish this we work in short development cycles to ensure that the product is always moving in the right direction. At each step of the way we make sure that the right professional is on the job.
+            </p>
         </div>
     </div>
 </div>
@@ -22,19 +24,24 @@ id: home
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <p class="title"><span class="tilt">Our</span> games...</p>
+                <p class="title"><span class="tilt">Our</span> games</p>
             </div>
         </div>
         <div class="row center">
             {% for post in site.posts %}
             {% if post.category == "game"%}
-            <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
-                    <div class="col-sm-4 project">
-                        <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
-                        <div class="overlay-box">
-                            <div class="content">
-                                <div class="excerpt">{{post.excerpt}}</div>
-                                <div class="details">Click to learn more</div>
+                <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
+                    <div class="col-lg-4 col-sm-6 project flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="{{site.baseurl}}/assets/images/projects/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
+                                <h2 class="">{{ post.name }}</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content">
+                                    <div class="excerpt">{{ post.excerpt }}</div>
+                                    <div class="details">Click to learn more</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -49,28 +56,34 @@ id: home
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <p class="title"><span class="tilt">Our</span> applications...</p>
+                <p class="title"><span class="tilt">Our</span> applications</p>
             </div>
         </div>
         <div class="row center">
             {% for post in site.posts %}
             {% if post.category == "software"%}
-            <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
-                <div class="col-sm-4 project">
-                    <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
-                    <div class="overlay-box">
-                        <div class="content">
-                            <div class="excerpt">{{post.excerpt}}</div>
-                            <div class="details">Click to learn more</div>
+                <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
+                    <div class="col-lg-4 col-sm-6 project flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="{{site.baseurl}}/assets/images/projects/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
+                                <h2 class="">{{ post.name }}</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content">
+                                    <div class="excerpt">{{ post.excerpt }}</div>
+                                    <div class="details">Click to learn more</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
             {% endif %}
             {% endfor %}
-    </div>
+        </div>
     </div>
 </div>
+
 <div class="partners">
     <div class="container">
         <div class="row">
@@ -79,15 +92,20 @@ id: home
             </div>
         </div>
         <div class="row center">
-                {% for post in site.posts %}
+                {% for post in site.posts reversed %}
                 {% if post.category == "partner"%}
                 <a href="{{post.site}}">
-                    <div class="col-lg-4 col-sm-6 partner">
-                        <img src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
-                        <div class="overlay-box">
-                            <div class="content">
-                                <h3>{{post.header}}</h3>
-                                <h2>{{post.name}}</h2>
+                    <div class="col-lg-4 col-sm-6 project flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="bg-g" src="{{site.baseurl}}/assets/images/partners/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
+                                <h2 class="">{{ post.name }}</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content">
+                                    <h3>{{ post.header }}</h3>
+                                    <h2>{{ post.name }}</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,10 +119,38 @@ id: home
 <div class="question" id="contact">
     <div class="container">
         <div class="row">
+            <div class="col-md-7">
+                <p class="title"><span class="tilt">Get</span> in touch</p>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-12">
-                <p>Questions about us?</p>
+                <div class="row">
+                    <p class="description">
+                        Do you have a great idea for a game or need specialized software just for you? We are always excited to discuss your ideas and see where it can go!
+                    </p>
+                </div>
                 
                 <a class="linkbutton center js-scroll-trigger" href="mailto:finn@ceroflux.com?Subject=Contact%20Form">Send Mail</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="location text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-5 mb-lg-0">
+                <h4 class="mb-4">Location</h4>
+                <p class="lead mb-0">Europalaan 400<br>3526 KS Utrecht</p>
+            </div>
+            <div class="col-md-6 mb-5 mb-lg-0">
+                <h4 class="mb-4">Email</h4>
+                <p class="lead mb-0">finn@ceroflux.com</p>
+            </div>
+            <div class="col-md-3 mb-5 mb-lg-0">
+                <h4 class="mb-4">Info</h4>
+                <p class="lead mb-0">KvK - 70868689 <br> BTW - NL219282237B01</p>
             </div>
         </div>
     </div>
@@ -118,14 +164,14 @@ id: home
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">{{post.title}}</h4>
+                    <h4 class="modal-title">{{ post.name }}</h4>
                 </div>
                 <div class="modal-body">
                     <div class="project-details">
                         <div class="project-image">
-                            <img class="img-responsive" src="{{site.baseurl}}/assets/images/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
+                            <img class="img-responsive" src="{{site.baseurl}}/assets/images/projects/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
                         </div>
-                        {{post.content}}
+                        {{ post.content }}
                     </div>
                 </div>
             </div>

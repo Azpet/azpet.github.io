@@ -15,6 +15,7 @@ header {
 .navbar {
     height: 95px;
 }
+
 .navbar-default {
     background-color: transparent;
     border: none;
@@ -37,10 +38,15 @@ header {
             }
         }
     }
+    .container {
+        position: relative;
+    }
 }
+
 .navbar-default .navbar-toggle.collapsed {
     background-color: transparent;
 }
+
 .navbar-collapse {
     border: none;
 }
@@ -53,6 +59,7 @@ header {
         font-weight: 500;
         font-size: 47px;
     }
+    
     .quick-intro {
         color: #929292;
         margin: 30px 0;
