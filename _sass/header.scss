@@ -73,6 +73,12 @@ header {
     }
 }
 
+@media (max-width: 767px) {
+    .main .main-intro {
+        margin-top: 30px;
+    }
+}
+
 @media only screen and (max-width: 986px), only screen and (max-device-width: 986px) {
     .main {
         .quick-intro {
