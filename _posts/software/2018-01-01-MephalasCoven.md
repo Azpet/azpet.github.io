@@ -21,6 +21,8 @@ A gaming (Elderscrolls Online) community website where guides and builds are sha
     <h3>Never Alone</h3>
     <p>Experience the heighest peaks and the deepest delves together with friends!</p>
 
+    <a href="https://www.mephalascoven.com/" target="_blank"><h4 class="text-center">Go To Website</h4></a>
+
     <h3>Details</h3>
     <p class="dev"><span>Developer:</span> CeroFlux</p>
     <p class="detail"><span>Release Date:</span> April 8th 2019</p>

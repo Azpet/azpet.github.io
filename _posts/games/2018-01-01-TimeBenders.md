@@ -24,6 +24,8 @@ An online 3rd-person battle arena game where you manipulate time to overcome you
     <h3>Develop your Magic</h3>
     <p>Select your class and build your deck from a wide range of spells, with hundreds of possible different combinations. Make your own selection of Time, Energy and Movement spells and devise your own unique style of combat.</p>
 
+    <a href="https://www.timebendersgame.com/" target="_blank"><h4 class="text-center">Go To Website</h4></a>
+
     <h3>Details</h3>
     <p class="dev"><span>Developer:</span> Oogbaard</p>
     <p class="detail"><span>Release Date:</span> TBA</p>
