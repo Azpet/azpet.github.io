@@ -237,6 +237,17 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .mfp-content .portfolio-modal .portfolio-modal-dialog {
+        margin: 6px 0px 6px 0px;
+    
+        .portfolio-modal-content .close-button {
+            top: 50px;
+            right: 50px;
+        }
+    }
+}
+
 /*---------- OVERLAY SECTION ----------*/
 .overlay-box {
     position: absolute;
