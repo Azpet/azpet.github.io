@@ -56,6 +56,15 @@ header {
     border: none;
 }
 
+@media (max-width: 767px) {
+    .navbar-collapse  {
+        background-color: white;
+        z-index: -1;
+        border-bottom: 1px solid #929292;
+        border-radius: 5px;
+    }
+}
+
 /*---------- MAIN JUMBOTRON ----------*/
 .main {
     .main-intro {
