@@ -30,7 +30,7 @@ id: home
         <div class="row center">
             {% for post in site.posts %}
             {% if post.category == "game"%}
-                <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
+                <a class="portfolio-item" href="#{{post.tag}}">
                     <div class="col-lg-4 col-sm-6 project flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -62,7 +62,7 @@ id: home
         <div class="row center">
             {% for post in site.posts %}
             {% if post.category == "software"%}
-                <a data-toggle="modal" data-target="{{site.baseurl}}#{{post.tag}}" href="">
+                <a class="portfolio-item" href="#{{post.tag}}">
                     <div class="col-lg-4 col-sm-6 project flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -159,17 +159,20 @@ id: home
 <!-- Modals -->
 {% for post in site.posts %}
 {% if post.category == "game" or post.category == "software"%}
-    <div id="{{post.tag}}" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">{{ post.name }}</h4>
+    <div id="{{post.tag}}" class="portfolio-modal mfp-hide" role="dialog">
+        <div class="portfolio-modal-dialog">
+            
+            <div class="portfolio-modal-content container">
+                <div class="portfolio-modal-header">
+                    <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                        <i class="fa fa-2x fa-times"></i>
+                    </a>
+                    <h2 class="portfolio-modal-title">{{ post.name }}</h2>
                 </div>
-                <div class="modal-body">
+                <div class="portfolio-modal-body">
                     <div class="project-details">
                         <div class="project-image">
-                            <img class="img-responsive" src="{{site.baseurl}}/assets/images/projects/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
+                            <img class="" src="{{site.baseurl}}/assets/images/projects/{{post.images[0].url}}" alt="{{post.images[0].alt}}">
                         </div>
                         {{ post.content }}
                     </div>

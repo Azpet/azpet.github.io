@@ -4,6 +4,7 @@
 			<meta charset="UTF-8"> 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="robots" content="index, follow">
+			<link rel="canonical" href="http://localhost:4000/">
 		
 			<title>CeroFlux &bull; Game Studio</title>
 			<meta name="description" content="Almost everything is possible in games and software and it's our goal to try and reach new limits! Whether it's for entertainment or more serious purposes, we are always ready for the next challenge.">
@@ -14,17 +15,23 @@
 			<!-- external -->
 			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<script src="/assets/external/jquery-easing/jquery.easing.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+			<!-- Plugin CSS -->
+			<link href="/assets/external/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/main.css">
 
-			<!-- scripts -->
-			<script src="/assets/js/smooth-scroll.js"></script>
-			<!-- <script src="/assets/js/mobile-check.js"></script>
-			<script src="/assets/js/particles.js"></script> -->
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128780320-2"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-128780320-2');
+			</script>
+			<!-- /Google Analytics -->
 
 		</head>
 		<body>
@@ -103,7 +110,7 @@
             
             
             
-                <a data-toggle="modal" data-target="#timebenders" href="">
+                <a class="portfolio-item" href="#timebenders">
                     <div class="col-lg-4 col-sm-6 project flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -124,7 +131,7 @@
             
             
             
-                <a data-toggle="modal" data-target="#moma" href="">
+                <a class="portfolio-item" href="#moma">
                     <div class="col-lg-4 col-sm-6 project flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -164,7 +171,7 @@
             
             
             
-                <a data-toggle="modal" data-target="#mephalascoven" href="">
+                <a class="portfolio-item" href="#mephalascoven">
                     <div class="col-lg-4 col-sm-6 project flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -185,7 +192,7 @@
             
             
             
-                <a data-toggle="modal" data-target="#jazzhands" href="">
+                <a class="portfolio-item" href="#jazzhands">
                     <div class="col-lg-4 col-sm-6 project flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -361,17 +368,20 @@
 
 
 
-    <div id="mephalascoven" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Mephala's Coven</h4>
+    <div id="mephalascoven" class="portfolio-modal mfp-hide" role="dialog">
+        <div class="portfolio-modal-dialog">
+            
+            <div class="portfolio-modal-content container">
+                <div class="portfolio-modal-header">
+                    <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                        <i class="fa fa-2x fa-times"></i>
+                    </a>
+                    <h2 class="portfolio-modal-title">Mephala's Coven</h2>
                 </div>
-                <div class="modal-body">
+                <div class="portfolio-modal-body">
                     <div class="project-details">
                         <div class="project-image">
-                            <img class="img-responsive" src="/assets/images/projects/MephalasCoven.jpg" alt="Software Logo">
+                            <img class="" src="/assets/images/projects/MephalasCoven.jpg" alt="Software Logo">
                         </div>
                         <p>A gaming (Elderscrolls Online) community website where guides and builds are shared and like minded people can find each other.
 <!--content--></p>
@@ -399,17 +409,20 @@
 
 
 
-    <div id="jazzhands" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Jazzhands</h4>
+    <div id="jazzhands" class="portfolio-modal mfp-hide" role="dialog">
+        <div class="portfolio-modal-dialog">
+            
+            <div class="portfolio-modal-content container">
+                <div class="portfolio-modal-header">
+                    <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                        <i class="fa fa-2x fa-times"></i>
+                    </a>
+                    <h2 class="portfolio-modal-title">Jazzhands</h2>
                 </div>
-                <div class="modal-body">
+                <div class="portfolio-modal-body">
                     <div class="project-details">
                         <div class="project-image">
-                            <img class="img-responsive" src="/assets/images/projects/Jazzhands.jpg" alt="Software Logo">
+                            <img class="" src="/assets/images/projects/Jazzhands.jpg" alt="Software Logo">
                         </div>
                         <p>An application for VR/AR on mobile phones which uses your phone’s camera to project your hands into the game world.
 <!--content--></p>
@@ -438,17 +451,20 @@
 
 
 
-    <div id="timebenders" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Timebenders</h4>
+    <div id="timebenders" class="portfolio-modal mfp-hide" role="dialog">
+        <div class="portfolio-modal-dialog">
+            
+            <div class="portfolio-modal-content container">
+                <div class="portfolio-modal-header">
+                    <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                        <i class="fa fa-2x fa-times"></i>
+                    </a>
+                    <h2 class="portfolio-modal-title">Timebenders</h2>
                 </div>
-                <div class="modal-body">
+                <div class="portfolio-modal-body">
                     <div class="project-details">
                         <div class="project-image">
-                            <img class="img-responsive" src="/assets/images/projects/Timebenders.jpg" alt="Game Logo">
+                            <img class="" src="/assets/images/projects/Timebenders.jpg" alt="Game Logo">
                         </div>
                         <p>An online 3rd-person battle arena game where you manipulate time to overcome your opponents. Rewind time until the rewinding never happened. 
 <!--content--></p>
@@ -480,17 +496,20 @@
 
 
 
-    <div id="moma" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Fingering Moma</h4>
+    <div id="moma" class="portfolio-modal mfp-hide" role="dialog">
+        <div class="portfolio-modal-dialog">
+            
+            <div class="portfolio-modal-content container">
+                <div class="portfolio-modal-header">
+                    <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                        <i class="fa fa-2x fa-times"></i>
+                    </a>
+                    <h2 class="portfolio-modal-title">Fingering Moma</h2>
                 </div>
-                <div class="modal-body">
+                <div class="portfolio-modal-body">
                     <div class="project-details">
                         <div class="project-image">
-                            <img class="img-responsive" src="/assets/images/projects/FingeringMoma.jpg" alt="Game Logo">
+                            <img class="" src="/assets/images/projects/FingeringMoma.jpg" alt="Game Logo">
                         </div>
                         <p>A funny mobile game where you use your finger to flick balls across the screen.
 <!--content--></p>
@@ -525,5 +544,15 @@
     </div>
 </footer>
 
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/assets/external/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/assets/external/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="/assets/js/smooth-scroll.js"></script>
+<script src="/assets/js/freelancer.js"></script>
+<!-- <script src="/assets/js/mobile-check.js"></script>
+<script src="/assets/js/particles.js"></script> -->
 		</body>
 	</html>

@@ -4,27 +4,34 @@
 			<meta charset="UTF-8"> 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="robots" content="index, follow">
+			<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
 		
 			<title>CeroFlux &bull; Game Studio</title>
 			<meta name="description" content="{{site.description}}">
 
-			<link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.ico">
+			<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
 			<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.ico">
 
 			<!-- external -->
 			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<script src="{{site.baseurl}}/assets/external/jquery-easing/jquery.easing.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+			<!-- Plugin CSS -->
+			<link href="{{ site.baseurl }}/assets/external/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/main.css">
+			<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/main.css">
 
-			<!-- scripts -->
-			<script src="{{site.baseurl}}/assets/js/smooth-scroll.js"></script>
-			<!-- <script src="{{site.baseurl}}/assets/js/mobile-check.js"></script>
-			<script src="{{site.baseurl}}/assets/js/particles.js"></script> -->
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128780320-2"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-128780320-2');
+			</script>
+			<!-- /Google Analytics -->
 
 		</head>
 		<body>
